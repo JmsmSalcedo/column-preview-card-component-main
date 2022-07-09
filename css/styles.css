@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+    --color-columna1:  rgb(227, 136, 38); 
+    --color-columna2:  rgb(0, 105, 112);
+    --color-columna3:  rgb(0, 66, 65);
+}
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3;
+}
+
+.contenedor {
+    display: flex;
+    width: 875px;
+    max-width: 1440;
+    min-width: 375;
+ 
+}
+.columna {
+    padding: 2rem;
+    color: #ffffff;
+
+}
+.columna:first-of-type {
+   border-radius: 15px 0 0 10px;    
+}
+.columna:last-of-type {
+    border-radius: 0 15px 15px 0;    
+ }
+
+.columna.sedans {
+    background-color: var(--color-columna1);
+}
+.columna.suvs {
+    background-color: var(--color-columna2);
+}
+.columna.luxury{
+    background-color: var(--color-columna3);
+    
+}
+.luxury a {
+    color: var(--color-columna3);
+}
+.suvs a {
+    color: var(--color-columna2);
+}
+.sedans a {
+    color: var(--color-columna1);
+}
+h1 {
+    text-transform: uppercase;
+}
+
+p{
+    margin: 4rem 0;
+}
+
+.columna a {
+    text-decoration: none;
+    background-color: #ffffff;
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    
+}
